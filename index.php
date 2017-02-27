@@ -1,3 +1,7 @@
+<?php
+require_once('includes/dbFunctions.inc.php');
+?>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -95,17 +99,12 @@
                     <h1 class="panel-title"><span class="glyphicon glyphicon-random"></span> Categories</h1>
                     </div>
                     <div class="list-group">
-                        <a href="#" class="list-group-item">Fashion</a>
-                        <a href="#" class="list-group-item">Electronics</a>
-                        <a href="#" class="list-group-item">Furniture</a>
-                        <a href="#" class="list-group-item">Sporting Goods</a>
-                        <a href="#" class="list-group-item">Collectibles & Art</a>
+                        <?php categoryName(); ?>
                         <div id="MainMenu">
                             <div class="list-group panel">
                                 <a href="#demo3" class="list-group-item" data-toggle="collapse" data-parent="#MainMenu"><b>More...</b></a>
                                 <div class="collapse" id="demo3">
-                                    <a href="" class="list-group-item">Music</a>
-                                    <a href="" class="list-group-item">Toys</a>
+                                    <?php categoryNameBonus(); ?>
                                 </div>
                             </div>
                         </div>
